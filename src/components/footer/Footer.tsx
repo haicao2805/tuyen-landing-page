@@ -9,27 +9,27 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = () => {
   const socials = [
     {
-      icon: <TwitterSvg />,
+      icon: <TwitterSvg className="w-[25px] h-[25px]" />,
       href: "",
       name: "twitter"
     },
     {
-      icon: <LinkedinSvg />,
+      icon: <LinkedinSvg className="w-[25px] h-[25px]" />,
       href: "",
       name: "linkedin"
     },
     {
-      icon: <InstagramSvg />,
+      icon: <InstagramSvg className="w-[25px] h-[25px]" />,
       href: "",
       name: "instagram"
     },
     {
-      icon: <YoutubeSvg />,
+      icon: <YoutubeSvg className="w-[25px] h-[25px]" />,
       href: "",
       name: "youtube"
     },
     {
-      icon: <FacebookSvg />,
+      icon: <FacebookSvg className="w-[25px] h-[25px]" />,
       href: "",
       name: "facebook"
     },
