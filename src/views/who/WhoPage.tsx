@@ -34,12 +34,13 @@ const WhoPage: React.FC<WhoPageProps> = () => {
       name: "facebook"
     },
   ]
-  return (<section className="bg-[#EEEEEE] h-screen relative z-0">
+  return (<section className="bg-[#EEEEEE] h-screen relative z-10 overflow-x-clip">
     <Image className="absolute top-[34px] left-[-262px] -z-10" src="/images/background-circle-1.png" width={672} height={672} alt="" />
-    <div className="absolute left-0 bottom-[150px]">
+    <Image className="absolute bottom-[-356px] right-[-243px] -z-10" src="/images/background-circle-2.png" width={572} height={572} alt="" />
+    <div className="absolute left-0 bottom-[150px] -z-10">
       <Image src="/images/label-who.png" width={282} height={72} alt="" />
     </div>
-    <div className="max-w-screen-app mx-auto flex items-center justify-center h-full gap-x-[92px]">
+    <div className="relative z-0 max-w-screen-app mx-auto flex items-center justify-center h-full gap-x-[92px]">
       <div className="w-[499.43px] h-[702.97px] relative">
         <Image className="absolute top-0 right-[64px] rotate-[-34.93deg]" src="/images/who-card-1.png" width={230} height={324.98} alt="" />
         <Image className="absolute bottom-[89px] left-[0px] rotate-[34.76deg]" src="/images/who-card-2.png" width={230} height={324.98} alt="" />
