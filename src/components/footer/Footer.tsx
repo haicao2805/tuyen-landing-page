@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { FacebookSvg, InstagramSvg, LinkedinSvg, LogoSvg, TwitterSvg, YoutubeSvg } from "../svg";
 import Link from "next/link";
 

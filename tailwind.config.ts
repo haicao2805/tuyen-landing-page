@@ -18,6 +18,13 @@ const config: Config = {
     app: "1440px",
     // => @media (min-width: 992px) { ... }
    },
+   width: {
+    "1440": "1440px",
+   },
+   fontFamily: {
+    philosopher: ["Philosopher"],
+    montserrat: ["Montserrat"],
+   },
   },
  },
  plugins: [],
