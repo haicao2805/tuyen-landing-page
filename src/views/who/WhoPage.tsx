@@ -35,7 +35,7 @@ const WhoPage: React.FC<WhoPageProps> = () => {
       name: "facebook"
     },
   ]
-  return (<section className="bg-[#EEEEEE] h-screen relative z-10 overflow-x-clip">
+  return (<section id="who" className="bg-[#EEEEEE] h-screen relative z-10 overflow-x-clip">
     <Image className="absolute top-[34px] left-[-262px] -z-10" src="/images/background-circle-1.png" width={672} height={672} alt="" />
     <Image className="absolute bottom-[-356px] right-[-243px] -z-10" src="/images/background-circle-2.png" width={572} height={572} alt="" />
     <div className="absolute left-0 bottom-[150px] -z-10">

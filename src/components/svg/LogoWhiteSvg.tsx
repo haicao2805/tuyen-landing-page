@@ -1,6 +1,7 @@
 import React from "react";
+import { SvgProps } from "./types";
 
-export function LogoSvg() {
+export function LogoWhiteSvg(props: SvgProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,6 +9,7 @@ export function LogoSvg() {
       height="92"
       fill="none"
       viewBox="0 0 154 92"
+      {...props}
     >
       <g clipPath="url(#clip0_18_481)">
         <path

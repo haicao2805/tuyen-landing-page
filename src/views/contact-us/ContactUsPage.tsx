@@ -16,7 +16,7 @@ const ContactUsPage: React.FC<ContactUsPageProps> = () => {
     console.log(data);
   }
 
-  return (<section className="bg-[#EEEEEE] h-screen relative z-0 overflow-hidden">
+  return (<section id="contact" className="bg-[#EEEEEE] h-screen relative z-0 overflow-hidden">
     <Image className="absolute bottom-[-310px] right-[-305px] -z-10" src="/images/background-circle-4.png" width={755} height={755} alt="" />
     <SectionLayout>
       <div className="h-full flex items-center justify-center gap-x-[141px]">

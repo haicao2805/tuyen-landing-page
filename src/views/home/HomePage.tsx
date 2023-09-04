@@ -6,7 +6,7 @@ interface HomeProps {
 }
 
 const HomePage: React.FC<HomeProps> = () => {
-  return (<section className="bg-[#EEEEEE] h-screen">
+  return (<section id="home" className="bg-[#EEEEEE] h-screen">
     <div className="relative w-fit mx-auto">
       <Image className="" src="/images/heart.png" alt="" width={851} height={930} />
       <button className="absolute top-[243px] left-[104px]">

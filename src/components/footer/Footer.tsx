@@ -1,4 +1,4 @@
-import { FacebookSvg, InstagramSvg, LinkedinSvg, LogoSvg, TwitterSvg, YoutubeSvg } from "../svg";
+import { FacebookSvg, InstagramSvg, LinkedinSvg, LogoWhiteSvg, TwitterSvg, YoutubeSvg } from "../svg";
 import Link from "next/link";
 
 interface FooterProps {
@@ -37,7 +37,7 @@ const Footer: React.FC<FooterProps> = () => {
   return (<footer className="bg-[#121212]">
     <div className="py-[56px] app:py-[65px]">
       <div className="flex flex-col items-center justify-center gap-y-[20px]">
-        <LogoSvg />
+        <LogoWhiteSvg />
         <div className="flex items-center justify-center gap-x-[29px]">
           {socials.map(item =>
             <Link key={item.name} href={item.href}>

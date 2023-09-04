@@ -1,12 +1,17 @@
-interface AppLayoutProps {
+"use client";
 
+import { appStore } from "@/redux";
+import { Provider } from "react-redux";
+
+interface AppLayoutProps {
+  children: React.ReactNode
 }
 
-const AppLayout: React.FC<AppLayoutProps> = () => {
+const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
   return (
-    <main>
-
-    </main>
+    <Provider store={appStore}>
+      {children}
+    </Provider>
   );
 }
 

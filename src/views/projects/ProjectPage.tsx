@@ -6,7 +6,7 @@ interface ProjectPageProps {
 }
 
 const ProjectPage: React.FC<ProjectPageProps> = () => {
-  return (<section className="bg-[#FFFFFF] h-screen relative z-0 overflow-hidden">
+  return (<section id="projects" className="bg-[#FFFFFF] h-screen relative z-0 overflow-hidden">
     <p className="our-project-title">OUR PROJECT</p>
     <SectionLayout>
       <div className="space-y-[14px] w-[296px]">
