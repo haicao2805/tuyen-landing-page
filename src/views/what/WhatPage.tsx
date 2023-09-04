@@ -1,3 +1,4 @@
+import SectionLayout from "@/components/SectionLayout";
 import Image from "next/image";
 
 interface WhatPageProps {
@@ -10,7 +11,9 @@ const WhatPage: React.FC<WhatPageProps> = () => {
     <div className="absolute left-0 bottom-[150px] -z-10">
       <Image src="/images/label-what.png" width={282} height={72} alt="" />
     </div>
-    <div className="max-w-screen-app mx-auto flex items-center justify-center h-full gap-x-[92px]"></div>
+    <SectionLayout>
+      <div className="flex items-center justify-center h-full gap-x-[92px]"></div>
+    </SectionLayout>
   </section>);
 }
 

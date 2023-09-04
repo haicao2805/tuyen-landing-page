@@ -2,3 +2,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.our-project-title {
+ /* Our Project */
+
+ position: absolute;
+ width: 1523px;
+ height: 269px;
+ left: calc(50% - 1523px / 2 - 0.5px);
+ top: 147px;
+
+ font-family: "Philosopher";
+ font-style: normal;
+ font-weight: 700;
+ font-size: 240px;
+ line-height: 269px;
+ /* identical to box height */
+ display: flex;
+ align-items: center;
+ text-align: center;
+ text-transform: uppercase;
+
+ background: linear-gradient(180deg, #dec68d 0%, rgba(222, 198, 141, 0) 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ text-fill-color: transparent;
+}
