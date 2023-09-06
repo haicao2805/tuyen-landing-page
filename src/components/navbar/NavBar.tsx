@@ -16,7 +16,7 @@ const NavBar: React.FC<NavBarProps> = () => {
   const dispatch = useDispatch();
   const menu = [
     {
-      title: "Who",
+      title: "About Us",
       href: "",
       id: "#who"
     },
