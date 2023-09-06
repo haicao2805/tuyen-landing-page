@@ -27,8 +27,8 @@ const HomePage: React.FC<HomeProps> = () => {
         <div
           className="absolute top-[0px] left-[90px]"
           onClick={() => {
+            dispatch(navActions.setSelected("#what"));
             handleClickScroll("what");
-            dispatch(navActions.setSelected("#what"))
           }}
         >
           <Button>
@@ -38,8 +38,8 @@ const HomePage: React.FC<HomeProps> = () => {
         <div
           className="absolute top-[112px] right-[0px]"
           onClick={() => {
+            dispatch(navActions.setSelected("#who"));
             handleClickScroll("who");
-            dispatch(navActions.setSelected("#who"))
           }}
         >
           <Button>
@@ -49,8 +49,8 @@ const HomePage: React.FC<HomeProps> = () => {
         <div
           className="absolute top-[208px] left-[0px]"
           onClick={() => {
+            dispatch(navActions.setSelected("#projects"));
             handleClickScroll("projects");
-            dispatch(navActions.setSelected("#projects"))
           }}
         >
           <Button>
@@ -60,8 +60,8 @@ const HomePage: React.FC<HomeProps> = () => {
         <div
           className="absolute top-[304px] right-[90px]"
           onClick={() => {
+            dispatch(navActions.setSelected("#contact"));
             handleClickScroll("contact");
-            dispatch(navActions.setSelected("#contact"))
           }}
         >
           <Button>

@@ -57,8 +57,8 @@ const NavBar: React.FC<NavBarProps> = () => {
           key={item.title}
           className={clsx(selected === item.id ? "bg-[#121212]" : "bg-transparent", "relative")}
           onClick={() => {
-            dispatch(navActions.setSelected(item.id))
             handleClickScroll(item.id.replace("#", ""));
+            dispatch(navActions.setSelected(item.id))
           }}>
           <p className={clsx(selected === item.id ? "text-[#DEC68D]" : "text-[#121212]", "relative", "text-[26px]  font-bold leading-[26px] font-philosopher px-[25.5px] py-[22px]")}>{item.title}</p>
           {selected === item.id && <TriangleSvg className="absolute -bottom-[11.34px] left-1/2 -translate-x-1/2" />}
