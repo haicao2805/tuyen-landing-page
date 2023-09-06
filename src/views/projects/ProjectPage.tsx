@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import SectionLayout from "@/components/SectionLayout";
 import Image from "next/image";
 
@@ -18,9 +19,9 @@ const ProjectPage: React.FC<ProjectPageProps> = () => {
           <p className="text-center text-[26px] leading-[26px] font-bold font-philosopher text-[#CD986D]">The Witch’s Shop</p>
           <p className="text-[12px] leading-[24px] font-normal font-montserrat text-[#121212]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet</p>
           <div className="flex items-center justify-center">
-            <button>
-              <Image src="/images/project-btn-contact.png" width={168} height={50} alt="" />
-            </button>
+            <Button size="small">
+              Contact
+            </Button>
           </div>
         </div>)}
       </div>

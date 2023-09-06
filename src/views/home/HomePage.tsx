@@ -1,5 +1,6 @@
 "use client";
 
+import Button from "@/components/Button";
 import { HomeDownArrowSvg } from "@/components/svg";
 import { navActions } from "@/redux";
 import Image from "next/image";
@@ -22,28 +23,36 @@ const HomePage: React.FC<HomeProps> = () => {
           className="absolute top-[0px] left-[90px]"
           onClick={() => dispatch(navActions.setSelected("#what"))}
         >
-          <Image src="/images/home-btn-what.png" width={242} height={72} alt="" />
+          <Button>
+            What?
+          </Button>
         </Link>
         <Link
           href="#who"
           className="absolute top-[112px] right-[0px]"
           onClick={() => dispatch(navActions.setSelected("#who"))}
         >
-          <Image src="/images/home-btn-who.png" width={242} height={72} alt="" />
+          <Button>
+            Who?
+          </Button>
         </Link>
         <Link
           href="#projects"
           className="absolute top-[208px] left-[0px]"
           onClick={() => dispatch(navActions.setSelected("#projects"))}
         >
-          <Image src="/images/home-btn-project.png" width={242} height={72} alt="" />
+          <Button>
+            Projects
+          </Button>
         </Link>
         <Link
           href="#contact"
           className="absolute top-[304px] right-[90px]"
           onClick={() => dispatch(navActions.setSelected("#contact"))}
         >
-          <Image src="/images/home-btn-contact.png" width={242} height={72} alt="" />
+          <Button>
+            Contact
+          </Button>
         </Link>
       </div>
       <button className="absolute left-1/2 bottom-[40px] -translate-x-1/2 move-up-and-down z-0">

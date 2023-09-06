@@ -4,6 +4,7 @@ import SectionLayout from "@/components/SectionLayout";
 import { useForm } from 'react-hook-form';
 import { FormWrapper, TextInput, TextareaInput } from "@/components/form";
 import Image from "next/image";
+import Button from "@/components/Button";
 
 interface ContactUsPageProps {
 
@@ -27,9 +28,9 @@ const ContactUsPage: React.FC<ContactUsPageProps> = () => {
               <TextInput name="name" label="Name" />
               <TextInput name="email" label="Email" type="email" />
               <TextareaInput name="message" label="Message" />
-              <button type="submit" className="">
-                <Image src="/images/contact-btn-send.png" width={242} height={72} alt="" />
-              </button>
+              <Button type="submit">
+                Send
+              </Button>
             </form>
           </FormWrapper>
         </div>

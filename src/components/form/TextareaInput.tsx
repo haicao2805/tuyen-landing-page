@@ -24,7 +24,7 @@ export const TextareaInput: React.FC<TextareaInputProps> = ({
         {...register(name, { required: `${name} is required` })}
         {...rest}
         id={name}
-        className="w-full px-3 py-2 font-normal font-montserrat text-[16px] leading-[32px] text-[#121212] bg-transparent border-b-[3px] box-border border-[#121212] outline-none"
+        className="w-full px-3 py-1 font-normal font-montserrat text-[16px] leading-[32px] text-[#121212] bg-transparent border-b-[3px] box-border border-[#121212] outline-none"
       ></textarea>
       <p className="text-red-500 font-montserrat">
         {formState.errors[name]?.message?.toString()}
