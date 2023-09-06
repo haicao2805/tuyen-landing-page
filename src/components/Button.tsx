@@ -1,6 +1,6 @@
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  size: "small" | "large"
+  size?: "small" | "large"
 }
 
 const Button: React.FC<ButtonProps> = ({ children, size = "large", ...rest }) => {
