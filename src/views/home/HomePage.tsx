@@ -4,7 +4,6 @@ import Button from "@/components/Button";
 import { HomeDownArrowSvg } from "@/components/svg";
 import { navActions } from "@/redux";
 import Image from "next/image";
-import Link from "next/link";
 import { useDispatch } from "react-redux";
 
 interface HomeProps {
@@ -13,47 +12,62 @@ interface HomeProps {
 
 const HomePage: React.FC<HomeProps> = () => {
   const dispatch = useDispatch();
+  const handleClickScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'instant' });
+    }
+  };
 
   return (<section id="home" className="bg-[#EEEEEE] h-screen">
     <div className="h-full relative w-app mx-auto">
       <Image className="h-full w-auto mx-auto" src="/images/heart.png" alt="" width={720} height={720} />
       <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[850px] h-[400px]">
-        <Link
-          href="#what"
+        <div
           className="absolute top-[0px] left-[90px]"
-          onClick={() => dispatch(navActions.setSelected("#what"))}
+          onClick={() => {
+            handleClickScroll("what");
+            dispatch(navActions.setSelected("#what"))
+          }}
         >
           <Button>
             What?
           </Button>
-        </Link>
-        <Link
-          href="#who"
+        </div>
+        <div
           className="absolute top-[112px] right-[0px]"
-          onClick={() => dispatch(navActions.setSelected("#who"))}
+          onClick={() => {
+            handleClickScroll("who");
+            dispatch(navActions.setSelected("#who"))
+          }}
         >
           <Button>
             Who?
           </Button>
-        </Link>
-        <Link
-          href="#projects"
+        </div>
+        <div
           className="absolute top-[208px] left-[0px]"
-          onClick={() => dispatch(navActions.setSelected("#projects"))}
+          onClick={() => {
+            handleClickScroll("projects");
+            dispatch(navActions.setSelected("#projects"))
+          }}
         >
           <Button>
             Projects
           </Button>
-        </Link>
-        <Link
-          href="#contact"
+        </div>
+        <div
           className="absolute top-[304px] right-[90px]"
-          onClick={() => dispatch(navActions.setSelected("#contact"))}
+          onClick={() => {
+            handleClickScroll("contact");
+            dispatch(navActions.setSelected("#contact"))
+          }}
         >
           <Button>
             Contact
           </Button>
-        </Link>
+        </div>
       </div>
       <button className="absolute left-1/2 bottom-[40px] -translate-x-1/2 move-up-and-down z-0">
         <HomeDownArrowSvg />

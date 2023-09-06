@@ -34,9 +34,9 @@ const Footer: React.FC<FooterProps> = () => {
     },
   ]
 
-  return (<footer className="bg-[#121212]">
-    <div className="py-[56px] app:py-[65px]">
-      <div className="flex flex-col items-center justify-center gap-y-[20px]">
+  return (<section id="#footer" className="bg-[#121212] h-screen">
+    <div className="py-[56px] app:py-[65px] h-full">
+      <div className="flex flex-col items-center justify-center gap-y-[20px] h-full">
         <LogoWhiteSvg />
         <div className="flex items-center justify-center gap-x-[29px]">
           {socials.map(item =>
@@ -47,7 +47,7 @@ const Footer: React.FC<FooterProps> = () => {
         <p className="text-[#FFFFFF] text-[12px] app:text-[16px] font-normal leading-[24px] app:leading-[32px]">© 2022 - 2023 Hat Cat Studio. All rights reserved.</p>
       </div>
     </div>
-  </footer>);
+  </section>);
 }
 
 export default Footer;

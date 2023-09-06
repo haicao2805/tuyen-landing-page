@@ -5,7 +5,7 @@ export interface NavState {
 }
 
 const initialState: NavState = {
- selected: "#who",
+ selected: "#home",
 };
 
 const navSlice = createSlice({

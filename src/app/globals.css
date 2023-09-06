@@ -7,6 +7,17 @@ html {
  scroll-behavior: smooth;
 }
 
+.fullpage-container {
+ width: 100%;
+ height: 100vh;
+ scroll-snap-type: y mandatory;
+ overflow-y: scroll;
+}
+
+.fullpage-container > section {
+ scroll-snap-align: start;
+}
+
 .our-project-title {
  /* Our Project */
 
@@ -47,4 +58,17 @@ html {
 
 .move-up-and-down {
  animation: MoveUpAndDown 1s infinite;
+}
+
+@keyframes Appear {
+ 0% {
+  opacity: 0;
+ }
+ 100% {
+  opacity: 1;
+ }
+}
+
+.appear {
+ animation: Appear 2s normal;
 }
