@@ -17,6 +17,9 @@ const HomePage: React.FC<HomeProps> = () => {
     if (element) {
       // 👇 Will scroll smoothly to the top of the next section
       element.scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => {
+        dispatch(navActions.setSelected(`#${id}`));
+      }, 1000)
     }
   };
 
@@ -27,7 +30,6 @@ const HomePage: React.FC<HomeProps> = () => {
         <div
           className="absolute top-[0px] left-[90px]"
           onClick={() => {
-            dispatch(navActions.setSelected("#what"));
             handleClickScroll("what");
           }}
         >
@@ -38,7 +40,6 @@ const HomePage: React.FC<HomeProps> = () => {
         <div
           className="absolute top-[112px] right-[0px]"
           onClick={() => {
-            dispatch(navActions.setSelected("#who"));
             handleClickScroll("who");
           }}
         >
@@ -49,7 +50,6 @@ const HomePage: React.FC<HomeProps> = () => {
         <div
           className="absolute top-[208px] left-[0px]"
           onClick={() => {
-            dispatch(navActions.setSelected("#projects"));
             handleClickScroll("projects");
           }}
         >
@@ -60,7 +60,6 @@ const HomePage: React.FC<HomeProps> = () => {
         <div
           className="absolute top-[304px] right-[90px]"
           onClick={() => {
-            dispatch(navActions.setSelected("#contact"));
             handleClickScroll("contact");
           }}
         >
