@@ -18,6 +18,9 @@ const config: Config = {
     app: "1440px",
     // => @media (min-width: 992px) { ... }
    },
+   spacing: {
+    app: "1280px",
+   },
    width: {
     "1440": "1440px",
    },

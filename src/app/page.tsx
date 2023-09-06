@@ -8,7 +8,7 @@ import WhoPage from "@/views/who/WhoPage";
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <NavBar />
       <HomePage />
       <WhoPage />
