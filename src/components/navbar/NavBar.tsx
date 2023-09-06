@@ -41,7 +41,7 @@ const NavBar: React.FC<NavBarProps> = () => {
     const element = document.getElementById(id);
     if (element) {
       // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: 'instant' });
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
