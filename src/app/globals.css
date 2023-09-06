@@ -11,17 +11,16 @@ html {
  /* Our Project */
 
  position: absolute;
- width: 1523px;
- height: 269px;
- left: calc(50% - 1523px / 2 - 0.5px);
- top: 147px;
+ width: 1333px;
+ height: 235px;
+ left: calc(50% - 1333px / 2 + 0.5px);
+ top: 70px;
 
  font-family: "Philosopher";
  font-style: normal;
  font-weight: 700;
- font-size: 240px;
- line-height: 269px;
- /* identical to box height */
+ font-size: 210px;
+ line-height: 235px;
  display: flex;
  align-items: center;
  text-align: center;
