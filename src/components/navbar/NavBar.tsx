@@ -44,7 +44,7 @@ const NavBar: React.FC<NavBarProps> = () => {
       element.scrollIntoView({ behavior: 'smooth' });
       setTimeout(() => {
         dispatch(navActions.setSelected(`#${id}`));
-      }, 1000)
+      }, 0)
     }
   };
 

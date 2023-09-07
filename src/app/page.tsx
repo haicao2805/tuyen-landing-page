@@ -19,22 +19,34 @@ export default function Home() {
     const pos = Math.round(event.currentTarget.scrollTop / window.screen.height);
     switch (pos) {
       case 0:
-        dispatch(navActions.setSelected("#home"));
+        setTimeout(() => {
+          dispatch(navActions.setSelected("#home"));
+        }, 0);
         break;
       case 1:
-        dispatch(navActions.setSelected("#who"));
+        setTimeout(() => {
+          dispatch(navActions.setSelected("#who"));
+        }, 0);
         break;
       case 2:
-        dispatch(navActions.setSelected("#what"));
+        setTimeout(() => {
+          dispatch(navActions.setSelected("#what"));
+        }, 0);
         break;
       case 3:
-        dispatch(navActions.setSelected("#projects"));
+        setTimeout(() => {
+          dispatch(navActions.setSelected("#projects"));
+        }, 0);
         break;
       case 4:
-        dispatch(navActions.setSelected("#contact"));
+        setTimeout(() => {
+          dispatch(navActions.setSelected("#contact"));
+        }, 0);
         break;
       case 5:
-        dispatch(navActions.setSelected("#footer"));
+        setTimeout(() => {
+          dispatch(navActions.setSelected("#footer"));
+        }, 0);
         break;
     }
   };

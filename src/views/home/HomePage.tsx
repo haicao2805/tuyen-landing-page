@@ -19,7 +19,7 @@ const HomePage: React.FC<HomeProps> = () => {
       element.scrollIntoView({ behavior: 'smooth' });
       setTimeout(() => {
         dispatch(navActions.setSelected(`#${id}`));
-      }, 1000)
+      }, 0)
     }
   };
 
