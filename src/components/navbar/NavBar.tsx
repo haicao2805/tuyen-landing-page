@@ -48,7 +48,7 @@ const NavBar: React.FC<NavBarProps> = () => {
     }
   };
 
-  return (<nav className={clsx(selected === "#home" || selected === "#footer" ? "hidden" : "block", "bg-transparent w-full fixed top-0 left-1/2 -translate-x-1/2 z-50 flex items-start justify-between mx-auto")}>
+  return (<nav className={clsx(selected === "#home" || selected === "#footer" ? "hide" : "block appear", "bg-transparent w-full fixed top-0 left-1/2 -translate-x-1/2 z-50 flex items-start justify-between mx-auto")}>
     <LogoBlackSvg className="ml-[32px]" />
     <div className="relative">
       <div className="absolute bottom-[-9px] right-0 flex items-center justify-start">

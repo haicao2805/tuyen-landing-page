@@ -72,3 +72,18 @@ html {
 .appear {
  animation: Appear 2s normal;
 }
+
+@keyframes Hide {
+ 0% {
+  opacity: 1;
+  /* display: block; */
+ }
+ 100% {
+  opacity: 0;
+  display: none;
+ }
+}
+
+.hide {
+ animation: Hide 0.5s forwards;
+}

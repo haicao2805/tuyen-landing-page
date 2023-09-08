@@ -15,8 +15,21 @@ import { useDispatch } from "react-redux";
 export default function Home() {
   const dispatch = useDispatch();
 
+  const calculatePos = (input: number) => {
+    if (input === 0) return 0;
+    else if (input < 1) return 1;
+    else if (input < 2) return 2;
+    else if (input < 3) return 3;
+    else if (input < 4) return 4;
+    else return 5;
+
+  }
+
   const handleScroll = (event: React.UIEvent) => {
-    const pos = Math.round(event.currentTarget.scrollTop / window.screen.height);
+    const pos = calculatePos(event.currentTarget.scrollTop / window.screen.height);
+    console.log("pos", event.currentTarget.scrollTop / window.screen.height);
+    console.log("event.currentTarget.scrollTop", event.currentTarget.scrollTop);
+    console.log("window.screen.height", window.screen.height);
     switch (pos) {
       case 0:
         setTimeout(() => {
