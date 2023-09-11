@@ -19,19 +19,42 @@ html {
 }
 
 .our-project-title {
- /* Our Project */
-
- position: absolute;
- width: 1333px;
- height: 235px;
- left: calc(50% - 1333px / 2 + 0.5px);
+ width: 330px;
+ height: 64px;
+ left: calc(50% - 330px / 2 + 0.5px);
  top: 70px;
+ font-size: 52px;
+ line-height: 64px;
 
+ @media screen and (min-width: 768px) {
+  width: 825px;
+  height: 146px;
+  left: calc(50% - 825px / 2 + 0.5px);
+  top: 70px;
+  font-size: 130px;
+  line-height: 146px;
+ }
+ @media screen and (min-width: 1280px) {
+  width: 1333px;
+  height: 235px;
+  left: calc(50% - 1333px / 2 + 0.5px);
+  top: 70px;
+  font-size: 210px;
+  line-height: 235px;
+ }
+ @media screen and (min-width: 1440px) {
+  width: 1523px;
+  height: 269px;
+  left: calc(50% - 1523px / 2 + 0.5px);
+  top: 69px;
+  font-size: 240px;
+  line-height: 269px;
+ }
+
+ font-weight: 700;
+ position: absolute;
  font-family: "Philosopher";
  font-style: normal;
- font-weight: 700;
- font-size: 210px;
- line-height: 235px;
  display: flex;
  align-items: center;
  text-align: center;
@@ -86,4 +109,17 @@ html {
 
 .hide {
  animation: Hide 0.5s forwards;
+}
+
+.swiper-pagination {
+ bottom: -4px !important;
+}
+
+.swiper-pagination-bullet {
+ opacity: 1 !important;
+ background-color: black !important;
+}
+
+.swiper-pagination-bullet-active {
+ background-color: #e5ac36 !important;
 }
