@@ -34,11 +34,9 @@ const WhatPage: React.FC<WhatPageProps> = () => {
   ]
 
   return (<section id="what" className="bg-[#EEEEEE] h-screen relative z-0">
-    <Image className="absolute bottom-[76px] left-[-123px] -z-10" src="/images/background-circle-3.png" width={553} height={553} alt="" />
     <SectionLayout>
-
       <Tab.Group>
-        <div className="flex items-end justify-between gap-x-[16px]">
+        <div className="pb-[40px] appLg:pb-0 h-full flex appLg:flex-row flex-col-reverse items-center justify-start appLg:justify-center appLg:gap-x-[16px] gap-y-[40px] appLg:gap-y-0">
           <Tab.Panels>
             <Tab.Panel><CharacterConceptSlider /></Tab.Panel>
             <Tab.Panel><CharacterConceptSlider /></Tab.Panel>
@@ -47,13 +45,13 @@ const WhatPage: React.FC<WhatPageProps> = () => {
             <Tab.Panel><CharacterConceptSlider /></Tab.Panel>
           </Tab.Panels>
           <Tab.List className="flex flex-col items-start justify-start gap-y-[16px] relative">
-            <Image className="absolute left-[-60.5px] top-[-225px]" src="/images/what-scepter.png" height={650} width={150} alt="" />
+            <Image className="absolute appLg:left-[-60.5px] appLg:top-[-225px] appLg:scale-100 scale-75 left-[-68px] top-[-225px]" src="/images/what-scepter.png" height={650} width={150} alt="" />
             {menu.map(item => <Tab key={item.title} className="outline-none">
               {({ selected }) => (<div>
-                <p className={clsx(selected ? "font-bold" : "font-normal", "ml-[80px] text-left font-philosopher text-[26px] leading-[26px] text-[#121212]")}>
+                <p className={clsx(selected ? "font-bold" : "font-normal", "ml-[80px] text-left font-philosopher text-[16px] leading-[26px] appLg:text-[26px] appLg:leading-[26px] text-[#121212]")}>
                   {item.title}
                 </p>
-                <WhatMenuItemSvg />
+                <WhatMenuItemSvg className="appLg:h-[32px] h-[16px] w-auto" />
               </div>
               )}
             </Tab>)}
@@ -61,26 +59,27 @@ const WhatPage: React.FC<WhatPageProps> = () => {
         </div>
       </Tab.Group>
     </SectionLayout>
+    <Image className="absolute bottom-[76px] left-[-123px] -z-10 scale-75 appLg:scale-100" src="/images/background-circle-3.png" width={553} height={553} alt="" />
   </section>);
 }
 
 const CharacterConceptSlider: React.FC = () => {
   return (
-    <div className="w-[500px]">
+    <div className="w-[300px] appMd:w-[400px] appLg:w-[500px]">
       <Swiper
         className="w-full"
       >
         <SwiperSlide>
-          <Image className="w-[500px] h-[500px]" src="/images/what-1.png" height={600} width={600} alt=""></Image>
+          <Image className="w-[300px] h-[300px] appMd:w-[400px] appMd:h-[400px] appLg:w-[500px] appLg:h-[500px] mx-auto" src="/images/what-1.png" height={600} width={600} alt=""></Image>
         </SwiperSlide>
         <SwiperSlide>
-          <Image className="w-[500px] h-[500px]" src="/images/what-2.png" height={600} width={600} alt=""></Image>
+          <Image className="w-[300px] h-[300px] appMd:w-[400px] appMd:h-[400px] appLg:w-[500px] appLg:h-[500px] mx-auto" src="/images/what-2.png" height={600} width={600} alt=""></Image>
         </SwiperSlide>
         <SwiperSlide>
-          <Image className="w-[500px] h-[500px]" src="/images/what-3.png" height={600} width={600} alt=""></Image>
+          <Image className="w-[300px] h-[300px] appMd:w-[400px] appMd:h-[400px] appLg:w-[500px] appLg:h-[500px] mx-auto" src="/images/what-3.png" height={600} width={600} alt=""></Image>
         </SwiperSlide>
         <SwiperSlide>
-          <Image className="w-[500px] h-[500px]" src="/images/what-4.png" height={600} width={600} alt=""></Image>
+          <Image className="w-[300px] h-[300px] appMd:w-[400px] appMd:h-[400px] appLg:w-[500px] appLg:h-[500px] mx-auto" src="/images/what-4.png" height={600} width={600} alt=""></Image>
         </SwiperSlide>
       </Swiper>
     </div>
