@@ -70,7 +70,7 @@ const HomePage: React.FC<HomeProps> = () => {
           </Button>
         </div>
       </div>
-      <div className="w-full appMd:hidden grid grid-cols-2 gap-[8px]">
+      <div className="absolute top-[calc(50%+2*108px)] w-full appMd:hidden grid grid-cols-2 gap-[8px]">
         <div
           className="flex items-center justify-center"
           onClick={() => {
