@@ -18,10 +18,10 @@ const ContactUsPage: React.FC<ContactUsPageProps> = () => {
   }
 
   return (<section id="contact" className="bg-[#EEEEEE] h-screen relative z-0 overflow-hidden">
-    <Image className="absolute bottom-[-310px] right-[-305px] -z-10" src="/images/background-circle-4.png" width={755} height={755} alt="" />
+    <Image className="appMd:block hidden absolute bottom-[-310px] right-[-305px] -z-10" src="/images/background-circle-4.png" width={755} height={755} alt="" />
     <SectionLayout>
       <div className="h-full flex items-center justify-center gap-x-[70px]">
-        <div className="w-[590px] space-y-[69px]">
+        <div className="appMd:w-[590px] space-y-[69px]">
           <p className="text-center text-[64px] leading-[64px] font-bold font-philosopher text-[#121212]">Contact Us</p>
           <FormWrapper methods={methods}>
             <form onSubmit={methods.handleSubmit(handleSubmit)} className="flex items-center justify-center flex-col gap-y-[20px]">
@@ -34,7 +34,7 @@ const ContactUsPage: React.FC<ContactUsPageProps> = () => {
             </form>
           </FormWrapper>
         </div>
-        <Image className="w-[363px] h-auto" src="/images/contact-form-card.png" width={459} height={644} alt="" />
+        <Image className="appMd:block hidden w-[363px] h-auto" src="/images/contact-form-card.png" width={459} height={644} alt="" />
       </div>
     </SectionLayout>
   </section>);
