@@ -48,13 +48,13 @@ const NavBar: React.FC<NavBarProps> = () => {
   };
 
   return (<nav className={clsx(selected === "#home" || selected === "#footer" ? "hide" : "block appear", "appLg:h-[80px] h-[64px] bg-transparent w-full fixed top-0 left-1/2 -translate-x-1/2 z-50 flex items-start justify-between mx-auto")}>
-    <LogoBlackSvg className="ml-[32px] w-auto appLg:h-[80px] h-[64px]" />
+    <LogoBlackSvg className="ml-[8px] appMd:ml-[32px] w-auto appLg:h-[80px] h-[64px]" />
     <div className="relative h-full flex items-center">
       <div className="absolute appMd:bottom-[-6px] bottom-[0px] right-0 flex items-center justify-start">
         <MoonStarDotSvg className="h-[15px] appMd:h-[20px] w-auto" />
         <div className="h-[2px] w-[200px] appMd:w-[500px] appLg:w-[1000px] appXl:w-[1200px] rounded-full bg-[#121212]"></div>
       </div>
-      <div className="hidden appLg:flex items-center justify-center mr-[32px]">
+      <div className="hidden appLg:flex items-center justify-center mr-[8px] appMd:mr-[32px]">
         {menu.map(item => <button
           key={item.title}
           className={clsx(selected === item.id ? "bg-[#121212]" : "bg-transparent", "relative")}
@@ -65,7 +65,7 @@ const NavBar: React.FC<NavBarProps> = () => {
           {selected === item.id && <TriangleSvg className="absolute -bottom-[11.34px] left-1/2 -translate-x-1/2" />}
         </button>)}
       </div>
-      <div className="block appLg:hidden mr-[32px] cursor-pointer">
+      <div className="block appLg:hidden mr-[8px] appMd:mr-[32px] cursor-pointer">
         <MobileButtonSvg className="w-[32px] h-[32px] appMd:w-[40px] appMd:h-[40px]" />
       </div>
     </div>

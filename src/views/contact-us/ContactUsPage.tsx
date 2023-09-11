@@ -24,7 +24,7 @@ const ContactUsPage: React.FC<ContactUsPageProps> = () => {
         <div className="appMd:w-[590px] space-y-[69px]">
           <p className="text-center text-[64px] leading-[64px] font-bold font-philosopher text-[#121212]">Contact Us</p>
           <FormWrapper methods={methods}>
-            <form onSubmit={methods.handleSubmit(handleSubmit)} className="flex items-center justify-center flex-col gap-y-[20px]">
+            <form onSubmit={methods.handleSubmit(handleSubmit)} className="flex items-center justify-center flex-col gap-y-[20px] px-[8px] appMd:p-0">
               <TextInput name="name" label="Name" />
               <TextInput name="email" label="Email" type="email" />
               <TextareaInput name="message" label="Message" />
