@@ -27,9 +27,6 @@ export default function Home() {
 
   const handleScroll = (event: React.UIEvent) => {
     const pos = calculatePos(event.currentTarget.scrollTop / window.screen.height);
-    console.log("pos", event.currentTarget.scrollTop / window.screen.height);
-    console.log("event.currentTarget.scrollTop", event.currentTarget.scrollTop);
-    console.log("window.screen.height", window.screen.height);
     switch (pos) {
       case 0:
         setTimeout(() => {

@@ -15,14 +15,22 @@ const config: Config = {
      "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
    },
    screens: {
-    app: "1440px",
-    // => @media (min-width: 992px) { ... }
+    appXl: "1440px",
+    appLg: "1280px",
+    appMd: "768px",
+    appSm: "320px",
    },
    spacing: {
-    app: "1280px",
+    appXl: "1440px",
+    appLg: "1280px",
+    appMd: "768px",
+    appSm: "320px",
    },
    width: {
     "1440": "1440px",
+    "1280": "1280px",
+    "768": "768px",
+    "320": "320px",
    },
    fontFamily: {
     philosopher: ["Philosopher"],

@@ -13,7 +13,6 @@ const navSlice = createSlice({
  initialState,
  reducers: {
   setSelected(state, action) {
-   console.log(action.payload);
    state.selected = action.payload;
   },
   resetState() {
