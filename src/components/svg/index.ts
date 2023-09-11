@@ -9,3 +9,4 @@ export * from "./HomeDownArrowSvg";
 export * from "./MoonStarDotSvg";
 export * from "./TriangleSvg";
 export * from "./WhatMenuItemSvg";
+export * from "./MobileButtonSvg";
