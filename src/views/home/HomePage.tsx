@@ -30,7 +30,7 @@ const HomePage: React.FC<HomeProps> = () => {
       <Image className="block md:hidden w-full h-auto" src="/images/heart-sm.png" alt="" width={656} height={952} />
       <div className="hidden appMd:block absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 appMd:w-[656px] appMd:h-[768px] appLg:w-[850px] appLg:h-[400px] appXL:w-[944px] appXL:h-[400px]">
         <div
-          className="absolute top-[0px] appMd:left-[56px] appLg:left-[90px] appXl:left-[100px]"
+          className="absolute top-[48px] appMd:left-[56px] appLg:left-[90px] appXl:left-[100px]"
           onClick={() => {
             handleClickScroll("what");
           }}
@@ -60,7 +60,7 @@ const HomePage: React.FC<HomeProps> = () => {
           </Button>
         </div>
         <div
-          className="absolute appMd:right-[56px] appMd:top-[692px] appLg:top-[304px] appXl:top-[304px] appLg:right-[90px] appXl:right-[100px]"
+          className="absolute appMd:right-[56px] appMd:top-[646px] appLg:top-[304px] appXl:top-[304px] appLg:right-[90px] appXl:right-[100px]"
           onClick={() => {
             handleClickScroll("contact");
           }}
@@ -112,9 +112,6 @@ const HomePage: React.FC<HomeProps> = () => {
           </Button>
         </div>
       </div>
-      {/* <div className="absolute left-1/2 bottom-[40px] -translate-x-1/2 move-up-and-down z-0">
-        <HomeDownArrowSvg />
-      </div> */}
     </div>
   </section>);
 }

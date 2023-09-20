@@ -23,9 +23,6 @@ const ProjectPage: React.FC<ProjectPageProps> = () => {
           768: {
             slidesPerView: 2
           },
-          1280: {
-            slidesPerView: 3
-          }
         }}
       >
         {[0, 1, 2, 3, 4, 5].map(item => <SwiperSlide key={item} className="">
