@@ -36,7 +36,7 @@ const WhatPage: React.FC<WhatPageProps> = () => {
   return (<section id="what" className="bg-[#EEEEEE] appLg:h-screen relative z-40 pt-[120px] pb-[64px] appLg:py-0">
     <SectionLayout>
       <Tab.Group>
-        <div className="pb-[40px] appLg:pb-0 h-full flex appLg:flex-row flex-col-reverse items-end justify-start appLg:justify-center appLg:gap-x-[16px] gap-y-[40px] appLg:gap-y-0">
+        <div className="pb-[40px] appLg:pb-0 h-full flex appLg:flex-row flex-col-reverse items-center appLg:items-end justify-start appLg:justify-center appLg:gap-x-[16px] gap-y-[40px] appLg:gap-y-0">
           <Tab.Panels>
             <Tab.Panel><CharacterConceptSlider /></Tab.Panel>
             <Tab.Panel><CharacterConceptSlider /></Tab.Panel>
