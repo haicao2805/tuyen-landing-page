@@ -35,15 +35,15 @@ const WhoPage: React.FC<WhoPageProps> = () => {
       name: "facebook"
     },
   ]
-  return (<section id="who" className="bg-[#EEEEEE] h-screen relative z-10 overflow-x-clip">
+  return (<section id="who" className="bg-[#EEEEEE] appLg:h-screen relative z-10 overflow-x-clip py-[64px] appLg:py-0">
     <Image className="absolute top-[34px] left-[-262px] -z-10" src="/images/background-circle-1.png" width={672} height={672} alt="" />
-    <Image className="absolute bottom-[-356px] right-[-243px] -z-20  scale-75 appLg:scale-100" src="/images/background-circle-2.png" width={572} height={572} alt="" />
+    {/* <Image className="absolute bottom-[-356px] right-[-243px] -z-20  scale-75 appLg:scale-100" src="/images/background-circle-2.png" width={572} height={572} alt="" /> */}
     <SectionLayout>
       <div className="relative z-0 flex appLg:flex-row flex-col items-center appLg:justify-end justify-center h-full gap-x-[72.37px]">
-        <div className="w-[280px] h-[350px] appLg:w-[391.97px] appLg:h-[571.49px] relative">
-          <Image className="w-[115px] appLg:w-[180px] h-auto absolute top-0 right-[16px] appLg:right-[32px] rotate-[-35deg]" src="/images/who-card-1.png" width={230} height={324.98} alt="" />
-          <Image className="w-[115px] appLg:w-[180px] h-auto absolute bottom-[128px] appLg:bottom-[109px] left-0 rotate-[35deg]" src="/images/who-card-2.png" width={230} height={324.98} alt="" />
-          <Image className="w-[115px] appLg:w-[180px] h-auto absolute right-0 bottom-0 rotate-[345deg]" src="/images/who-card-3.png" width={230} height={324.98} alt="" />
+        <div className="w-[250px] h-[460px] sm:w-[391.97px] sm:h-[571.49px] relative">
+          <Image className="w-[130px] sm:w-[180px] h-auto absolute top-0 right-[16px] appLg:right-[32px] rotate-[-35deg]" src="/images/who-card-1.png" width={230} height={324.98} alt="" />
+          <Image className="w-[130px] sm:w-[180px] h-auto absolute bottom-[128px] appLg:bottom-[109px] left-0 rotate-[35deg]" src="/images/who-card-2.png" width={230} height={324.98} alt="" />
+          <Image className="w-[130px] sm:w-[180px] h-auto absolute right-0 bottom-0 rotate-[345deg]" src="/images/who-card-3.png" width={230} height={324.98} alt="" />
         </div>
         <div className="w-[288px] appMd:w-[505px] appLg:space-y-[16px]">
           <div className="">

@@ -21,7 +21,7 @@ const ContactUsPage: React.FC<ContactUsPageProps> = () => {
     <Image className="appMd:block hidden absolute bottom-[-310px] right-[-305px] -z-10" src="/images/background-circle-4.png" width={755} height={755} alt="" />
     <SectionLayout>
       <div className="h-full flex items-center justify-center gap-x-[70px]">
-        <div className="appMd:w-[590px] w-[480px] space-y-[69px] p-[32px] bg-[#EEEEEE] rounded-[8px]">
+        <div className="appMd:w-[590px] w-[360px] space-y-[69px] p-[32px] bg-[#EEEEEE] rounded-[8px]">
           <p className="text-center text-[48px] leading-[48px] font-bold font-philosopher text-[#121212]">Contact Us</p>
           <FormWrapper methods={methods}>
             <form onSubmit={methods.handleSubmit(handleSubmit)} className="flex items-center justify-center flex-col gap-y-[20px] px-[8px] appMd:p-0">
