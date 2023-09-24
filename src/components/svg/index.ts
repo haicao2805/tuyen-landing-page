@@ -10,3 +10,5 @@ export * from "./MoonStarDotSvg";
 export * from "./TriangleSvg";
 export * from "./WhatMenuItemSvg";
 export * from "./MobileButtonSvg";
+export * from "./ArrowSvg";
+export * from "./ClosePopupSvg";

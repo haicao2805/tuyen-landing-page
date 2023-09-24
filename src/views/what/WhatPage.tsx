@@ -2,13 +2,12 @@
 
 import SectionLayout from "@/components/SectionLayout";
 import { Tab } from '@headlessui/react';
-import { Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import 'swiper/css';
-import 'swiper/css/pagination';
 import Image from "next/image";
 import clsx from "clsx";
-import { WhatMenuItemSvg } from "@/components/svg";
+import { ArrowSvg, WhatMenuItemSvg } from "@/components/svg";
 import { WHAT } from "@/constant";
 
 interface WhatPageProps {
@@ -16,24 +15,6 @@ interface WhatPageProps {
 }
 
 const WhatPage: React.FC<WhatPageProps> = () => {
-  const menu = [
-    {
-      title: "A. Character Concept"
-    },
-    {
-      title: "B. Chibi"
-    },
-    {
-      title: "C. YCH"
-    },
-    {
-      title: "D. Item - Icon - Object"
-    },
-    {
-      title: "E. NFT"
-    },
-  ]
-
   return (<section id="what" className="bg-[#EEEEEE] appLg:h-screen relative z-40 pt-[120px] pb-[64px] appLg:py-0">
     <SectionLayout>
       <Tab.Group>
@@ -63,16 +44,30 @@ const WhatPage: React.FC<WhatPageProps> = () => {
 
 const CharacterConceptSlider: React.FC<{ images: string[] }> = ({ images }) => {
   return (
-    <div className="w-[300px] appMd:w-[500px] appLg:w-[650px] mb-[48px]">
+    <div className="w-[300px] appMd:w-[500px] appLg:w-[650px] mb-[48px] relative">
+
       <Swiper
         className="w-full"
       >
+        {images.length > 1 && <NavigationButtons />}
         {images.map(item => <SwiperSlide key={item}>
           <Image className="w-[300px] h-[300px] appMd:w-[500px] appMd:h-[500px] appLg:w-[650px] appLg:h-[650px] mx-auto" src={item} height={600} width={600} alt=""></Image>
         </SwiperSlide>)}
       </Swiper>
     </div>
   );
+}
+
+const NavigationButtons: React.FC = () => {
+  const swiper = useSwiper();
+  return (<div className="absolute bottom-0 inset-x-0 flex items-center justify-between z-10 appMd:px-[64px]">
+    <div onClick={() => swiper.slidePrev()} className="cursor-pointer swiper-button-prev">
+      <ArrowSvg className="rotate-180" />
+    </div>
+    <div onClick={() => swiper.slideNext()} className="cursor-pointer swiper-button-next">
+      <ArrowSvg />
+    </div>
+  </div>)
 }
 
 export default WhatPage;
