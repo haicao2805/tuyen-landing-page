@@ -62,7 +62,7 @@ export default function Home() {
   };
 
   return (
-    <main className="fullpage-container" onScroll={handleScroll}>
+    <main className="fullpage-container overflow-hidden" onScroll={handleScroll}>
       <NavBar />
       <HomePage />
       <WhoPage />

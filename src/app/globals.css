@@ -87,6 +87,19 @@ html {
  animation: MoveUpAndDown 1s infinite;
 }
 
+@keyframes MoveLeft {
+ 0% {
+  left: 50%;
+ }
+ 100% {
+  left: 0%;
+ }
+}
+
+.move-left {
+ animation: MoveLeft 0.5s ease-in;
+}
+
 @keyframes Appear {
  0% {
   opacity: 0;

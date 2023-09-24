@@ -68,7 +68,7 @@ const CharacterConceptSlider: React.FC<{ images: string[] }> = ({ images }) => {
         className="w-full"
       >
         {images.map(item => <SwiperSlide key={item}>
-          <Image className="w-[300px] h-[300px] appMd:w-[500px] appMd:h-[500px] appLg:w-[650px] appLg:h-[650px] mx-auto" src="/images/what-1.png" height={600} width={600} alt=""></Image>
+          <Image className="w-[300px] h-[300px] appMd:w-[500px] appMd:h-[500px] appLg:w-[650px] appLg:h-[650px] mx-auto" src={item} height={600} width={600} alt=""></Image>
         </SwiperSlide>)}
       </Swiper>
     </div>
