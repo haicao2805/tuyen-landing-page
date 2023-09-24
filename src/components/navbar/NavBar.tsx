@@ -122,7 +122,7 @@ const NavBar: React.FC<NavBarProps> = () => {
                   }}
                   className={clsx(
                     selected === item.id ? "text-[#DEC68D] bg-[#121212]" : "text-[#121212]",
-                    'text-[20px] appMd:text-[26px] font-bold leading-[26px] font-philosopher px-[25.5px] py-[22px] rounded-[8px]'
+                    'text-[20px] appMd:text-[26px] font-bold leading-[26px] font-philosopher px-[25.5px] py-[22px] rounded-[8px] w-[200px] text-center'
                   )}
                   aria-current={selected === item.id ? 'page' : undefined}
                 >

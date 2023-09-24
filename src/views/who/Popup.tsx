@@ -30,9 +30,9 @@ export default function Popup({ isOpen, setIsOpen, selectedImg }: { selectedImg:
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="flex items-center justify-center gap-x-[80px] w-fit transform overflow-hidden transition-all">
+              <Dialog.Panel className="flex appLg:flex-row flex-col items-center justify-center gap-y-[40px] appLg:gap-y-0 appLg:gap-x-[80px] w-fit transform overflow-hidden transition-all">
                 <Image
-                  className="w-[420px] h-auto"
+                  className="w-[180px] sm:w-[280px] appLg:w-[420px] h-auto"
                   src={selectedImg} width={230} height={324.98} alt="" />
                 <div className='w-fit h-fit relative'>
                   <div className='absolute inset-0 px-[40px] flex items-center justify-center flex-col text-left'>
@@ -40,9 +40,9 @@ export default function Popup({ isOpen, setIsOpen, selectedImg }: { selectedImg:
                     <p className='text-[16px] leading-[32px] text-[#121212] font-montserrat font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet</p>
                   </div>
                   <button onClick={() => setIsOpen(false)} className='absolute right-[16px] top-[26px] outline-none focus:bg-none'>
-                    <ClosePopupSvg />
+                    <ClosePopupSvg className='w-[20px] h-[20px] appMd:w-[32px] appMd:h-[32px]' />
                   </button>
-                  <Image src="/images/popup-bg.png" width={521} height={272} alt='' />
+                  <Image src="/images/popup-bg.png" className='appMd:w-auto appMd:h-auto w-auto h-[300px]' width={521} height={272} alt='' />
                 </div>
               </Dialog.Panel>
             </Transition.Child>

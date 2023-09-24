@@ -89,7 +89,7 @@ html {
 
 @keyframes MoveLeft {
  0% {
-  left: 50%;
+  left: 100%;
  }
  100% {
   left: 0%;
@@ -97,7 +97,7 @@ html {
 }
 
 .move-left {
- animation: MoveLeft 0.5s ease-in;
+ animation: MoveLeft 0.4s ease-in;
 }
 
 @keyframes Appear {
