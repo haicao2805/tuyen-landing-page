@@ -49,7 +49,7 @@ const WhoPage: React.FC<WhoPageProps> = () => {
       <Popup isOpen={isOpen} setIsOpen={setIsOpen} selectedImg={selectedImg} />
       <Image className="absolute top-[34px] left-[-262px] -z-10" src="/images/background-circle-1.png" width={672} height={672} alt="" />
       <SectionLayout>
-        <div className="relative z-0 flex appLg:flex-row flex-col items-center appLg:justify-end justify-center h-full gap-x-[72.37px]">
+        <div className="relative z-0 flex appLg:flex-row flex-col items-center appLg:justify-end justify-center h-full gap-x-[72.37px] gap-y-[40px] appLg:gap-y-0">
           <div className="w-[250px] h-[460px] sm:w-[391.97px] sm:h-[571.49px] relative">
             <Image
               onClick={() => {
@@ -73,13 +73,13 @@ const WhoPage: React.FC<WhoPageProps> = () => {
               className="cursor-pointer w-[130px] sm:w-[180px] h-auto absolute right-0 bottom-[-28px] rotate-[345deg]"
               src="/images/who-card-3.png" width={230} height={324.98} alt="" />
           </div>
-          <div className="w-[288px] appMd:w-[505px] appLg:space-y-[16px]">
+          <div className="w-[288px] appMd:w-[505px] space-y-[16px]">
             <div className="">
               <p className="font-philosopher font-bold text-[44px] appMd:text-[78px] text-[#121212] leading-auto">{HOME_BANNER.titleOne}</p>
               <p className="font-philosopher font-bold text-[50px] appMd:text-[88px] text-[#121212] leading-auto">{HOME_BANNER.titleTwo} <span className="text-[#CD986D]">{HOME_BANNER.titleThree}</span></p>
               <p className="appLg:mt-[16px] font-montserrat text-[#121212] font-normal text-[12px] leading-[24px] appLg:text-[16px] appLg:leading-[32px]">{HOME_BANNER.description}</p>
             </div>
-            <div className="flex items-center justify-center flex-row appMd:flex-col appMd:gap-y-[16px] appMd:gap-x-0 gap-x-[16px]">
+            <div className="flex items-center justify-center flex-col gap-y-[16px] ">
               <p className="font-normal text-[12px] leading-[24px] appMd:text-[16px] appMd:leading-[32px] text-[#121212] underline">FOLLOW US ON</p>
               <div className="flex items-center justify-center gap-x-[10px] appMd:gap-x-[32px]">
                 {socials.map(item => <Link href={item.href} key={item.name}>

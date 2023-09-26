@@ -2,7 +2,7 @@
 
 import SectionLayout from "@/components/SectionLayout";
 import { Tab } from '@headlessui/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import 'swiper/css';
 import Image from "next/image";
@@ -48,10 +48,12 @@ const CharacterConceptSlider: React.FC<{ images: string[] }> = ({ images }) => {
 
       <Swiper
         className="w-full"
+        pagination={{ clickable: true }}
+        modules={[Pagination]}
       >
-        {images.length > 1 && <NavigationButtons />}
+        {/* {images.length > 1 && <NavigationButtons />} */}
         {images.map(item => <SwiperSlide key={item}>
-          <Image className="w-[300px] h-[300px] appMd:w-[500px] appMd:h-[500px] appLg:w-[650px] appLg:h-[650px] mx-auto" src={item} height={600} width={600} alt=""></Image>
+          <Image className="p-[16px] w-[300px] h-[300px] appMd:w-[500px] appMd:h-[500px] appLg:w-[650px] appLg:h-[650px] mx-auto" src={item} height={600} width={600} alt=""></Image>
         </SwiperSlide>)}
       </Swiper>
     </div>
